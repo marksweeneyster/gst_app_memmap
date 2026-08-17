@@ -22,11 +22,11 @@ This produces `build/gst_shm_writer` and `build/gst_shm_reader`.
 
 ## Run
 
-Start the writer in one terminal and the reader in another:
+Start the writer in one terminal and the reader in another (GST_DEBUG is optional but will show gstreamer logs):
 
 ```sh
-./build/gst_shm_writer &          # terminal 1
-./build/gst_shm_reader            # terminal 2
+GST_DEBUG=3 ./build/gst_shm_writer           # terminal 1
+GST_DEBUG=3 ./build/gst_shm_reader            # terminal 2
 ```
 
 Options:
@@ -35,7 +35,7 @@ Options:
   `autovideosink`).
 - `gst_shm_reader --verbose` logs each consumed sequence number and slot.
 
-Press Ctrl-C in either order to stop; see [Shutdown](#shutdown).
+Press Ctrl-C in either order to stop.
 
 ## Theory of operation
 
