@@ -9,7 +9,7 @@ synchronized with a `free`/`data` counting-semaphore pair.
 
 ## Build
 
-Requires CMake >= 3.16, a C++17 compiler, and GStreamer 1.0 with the app and
+Requires CMake >= 3.16, a C++20 compiler, and GStreamer 1.0 with the app and
 video libraries (`gstreamer-1.0`, `gstreamer-app-1.0`, `gstreamer-video-1.0`
 pkg-config modules).
 
