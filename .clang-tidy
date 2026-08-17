@@ -1,0 +1,73 @@
+---
+Checks: '-*,
+bugprone-*,
+cert-dcl51-cpp,
+cert-dcl58-cpp,
+cert-err34-c,
+cert-err52-cpp,
+cert-err60-cpp,
+cert-flp30-c,
+cert-msc50-cpp,
+cert-msc51-cpp,
+cert-str34-c,
+clang-analyzer-*,
+cppcoreguidelines-*,
+google-default-arguments,
+google-explicit-constructor,
+google-runtime-int,
+google-runtime-operator,
+llvm-namespace-comment,
+misc-const-correctness,
+misc-explicit-constructor,
+misc-include-cleaner,
+misc-misplaced-const,
+misc-new-delete-overloads,
+misc-no-recursion,
+misc-non-copyable-objects,
+misc-static-assert,
+misc-throw-by-value-catch-by-reference,
+misc-unconventional-assign-operator,
+misc-uniqueptr-reset-release,
+misc-unused-alias-decls,
+misc-unused-parameters,
+misc-unused-using-decls,
+modernize-*,
+mpi-buffer-deref,
+mpi-type-mismatch,
+openmp-use-default-none,
+performance_avoid-endl,
+performance_enum_size,
+performance-for-range-copy,
+performance-implicit-conversion-in-loop,
+performance-inefficient-algorithm,
+performance-inefficient-string-concatenation,
+performance-inefficient-vector-operation,
+performance-move-const-arg,
+performance-move-constructor-init,
+performance-no-automatic-move,
+performance-noexcept-move-constructor,
+performance-prefer-single-char-overloads,
+performance-trivially-destructible,
+performance-type-promotion-in-math-fn,
+performance-unnecessary-copy-initialization,
+performance-unnecessary-value-param,
+performance-use-std-move,
+portability-simd-intrinsics,
+readability-*'
+
+CheckOptions:
+  readability-function-cognitive-complexity.IgnoreMacros : true
+  readability-identifier-naming.ClassCase : lower_case
+  readability-identifier-naming.ClassSuffix : _t 
+  readability-identifier-naming.StructCase : lower_case
+  readability-identifier-naming.StructSuffix : _t 
+  readability-identifier-naming.PrivateMemberPrefix : _
+  readability-identifier-naming.ProtectedMemberPrefix : _
+  readability-identifier-naming.PublicMemberPrefix : ''
+  readability-identifier-naming.GlobalConstantPrefix : k_
+  readability-identifier-naming.MemberCase : lower_case
+  readability-identifier-naming.EnumCase : lower_case
+  readability-identifier-naming.EnumSuffix : _e 
+  readability-identifier-naming.TemplateParameterCase : UPPER_CASE
+
+FormatStyle: 'file'
