@@ -6,8 +6,6 @@ region through `appsrc`/`appsink`, and a consumer (`gst_shm_reader`) reads them
 back and displays them. The two processes are decoupled by a 2-slot ring buffer
 synchronized with a `free`/`data` counting-semaphore pair.
 
-The protocol is described more formally in
-`openspec/specs/shm-frame-broker/spec.md`.
 
 ## Build
 
